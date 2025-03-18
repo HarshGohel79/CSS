@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        body
+        {
+            background: black;
+        }        
+        .main {
+            width: 100px;
+            height: 100px;
+            /* background: black; */
+            margin: 100px auto;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: 2s;
+        }
+
+        .front,.back ,.h1,.h2
+        {
+            width: inherit;
+            height: inherit;
+            background: yellow;
+            color:pink;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotatex(0deg) translatez(50px);
+            backface-visibility: hidden;
+            border: 3px solid black;
+        }
+
+        .back {
+            transform: rotatex(90deg) translatez(50px);
+            background: red;
+
+        }
+        .h1 {
+            transform: rotatex(180deg) translatez(50px);
+            background: green;
+
+        }
+        .h2{
+            transform: rotatex(270deg) translatez(50px);
+            background: pink;
+            color: green;
+
+        }
+
+
+        .main:hover {
+            transform: rotatex(-90deg);
+            transform: rotatex(-180deg);
+            transform: rotatex(-270deg);
+        }
+    </style>
+</head>
+<body>
+        <div class="main">
+            <div class="front">
+                <i class="fa fa-instagram"></i>
+            </div>
+            <div class="back">
+                <i class="fa fa-facebook"></i>
+            </div>
+            <div class="h1">
+                <i class="fa fa-google"></i>
+            </div>
+            <div class="h2">
+                <i class="fa fa-youtube"></i>
+            </div>
+        </div>
+</body>
+</html>

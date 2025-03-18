@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>riya </title>
+    <style>
+
+     .nav
+     {
+        height: 100px;
+        background: black;
+        text-align: center;
+        word-spacing: 30px;
+    
+    }
+     ul{
+        margin: 0;
+        padding: 0%;
+     }
+
+
+     
+     a
+     {
+         text-decoration: none;
+         color: aqua;
+        }
+    li
+    {
+           display: inline;
+           font-size: 60px;
+           position: relative;
+    }
+        
+     li::after
+     {
+        content: "";
+         color: green;
+         height: 9px;
+         width: 0;
+         background: yellowgreen;
+         position: absolute;
+         color: blue;
+         top: 100%;
+         left: 0;
+         /* transform: scale(45deg) */
+         transition: 0.3s;
+
+     }
+    li:hover::after
+    {
+        width: 100%;
+        
+    }
+
+    li:hover
+    {
+        font-size: 70px;
+        /* background: linear-gradient(); */
+        background: white;
+        /* border-radius: 20px; */
+        /* color: blue; */
+        word-spacing: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li> <a href="link">Home</a ></li>
+            <li> <a href="link">About</a></li>
+            <li> <a href="link">Services</a></li>
+            <li> <a href="link">Contect</a></li>
+        
+
+        </ul> 
+     </div>
+
+</body>
+</html>

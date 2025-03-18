@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body
+        {
+            background: black;
+        }
+        .main
+        {
+            height: 100px;
+            width: 100px;
+            color: white;
+            /* background: gray ; */
+            display: block;
+            font-size: 20px;
+            margin-top: 200px;
+            margin-left: 600px;
+            text-align: center;
+            line-height: 100px;
+            transform-style: preserve-3d;
+            position: relative;
+            transition: 2s;
+        }
+
+        .front,.back,.front1,.back1
+        {
+            height: inherit;
+            width: inherit;
+            position: absolute;
+            background: lightblue;
+            top: 0px;
+            left: 0px;
+            transform: rotatey(0deg) translatez(50px);
+            border: 2px solid black;
+            backface-visibility: hidden;
+
+        }
+
+        
+        .back
+        {
+           
+            transform: rotatey(90deg) translateZ(50px);
+            background: pink;
+            color: blue;
+           
+
+        }
+
+        .front1
+        {
+            transform: rotatey(180deg) translateZ(50px);
+            background: red;
+            color: aqua;
+              
+         }
+
+         .back1
+        {
+            transform: rotatey(270deg) translateZ(50px);
+            background: yellow;
+            color: black;
+            
+         }
+
+
+        .main:hover  
+        {
+            transform: rotatey(-90deg) translateZ(0px); 
+        }
+
+        .main:hover  
+        {
+            transform: rotatey(-180deg) translateZ(0px); 
+        }
+
+        
+        .main:hover 
+        {
+            transform: rotatey(-270deg) translateZ(0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="front">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <div class="back">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <div class="front1">
+            <i class="fa fa-facebook"></i>
+        </div>
+        <div class="back1">
+            <i class="fa fa-facebook"></i>
+        </div> 
+    </div>
+
+</body>
+</html>

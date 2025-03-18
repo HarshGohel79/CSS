@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *
+    {
+        box-sizing: border-box;
+      
+    }
+
+   .header
+   {
+    width: 100%;
+     height: auto;
+     background: wheat;
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .header .x
+   { 
+    height: 200px;
+    width: 25%;
+    font-size: 30px;
+    border: 3px solid black;
+   }
+   @media(max-width:1000px)
+   {
+    .header .x
+    {
+        width: 50%;
+    }
+   }
+   @media(max-width:517px)
+   {
+    .header .x
+    {
+        width: 100%;
+    }
+   }
+   /* @media(max-width:800px)
+   {
+    .header .x
+    {
+        width: 20%;
+    }
+   }
+   @media(max-width:1000px)
+   {
+    .header .x
+    {
+        width: 50%;
+    }
+   } */
+
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="x">col 1</div>
+        <div class="x">col 1</div>
+        <div class="x">col 1</div>
+        <div class="x">col 1</div>
+    </div>
+</body>
+</html>

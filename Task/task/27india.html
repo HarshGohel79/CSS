@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+        }
+        .main
+       {
+         width: 100%;
+         height: 750px;
+         position: relative;
+         background: transparent;
+         box-sizing: border-box;
+         overflow: hidden;
+         /* transform: scale(1); */
+       }
+       .orange
+       {
+        width: 33%;
+        height: 100%;
+        background: orange;
+        position: absolute;
+        /* clip-path: polygon(0% 0% ,100% 0%,0% 100%,0% 0%); */
+       }
+    
+       .white
+       {
+        width: 34%;
+        height: 100%;
+        background: white;
+        position: absolute;
+        left: 33%;
+        display: flex;
+        align-items: center;
+       }
+       .green
+       {
+        width: 33%;
+        height: 100%;
+        background: green;
+        position: absolute;
+        left: 67%;
+       }
+       .white::after
+       {
+        content: "";
+        width: 100%;
+        height: 500px;
+        background: url(imges/800px-Ashoka_Chakra_1.svg-removebg-preview.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: 10s;
+        transform: rotate(1);
+       }
+
+       .white:hover::after
+       {
+           transform: rotate(-360deg);
+       }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="main"> <embed src="i:\HTML\XHTML5\Teri Ho Na Saki - King.mp3 " >  -->
+        <div class="orange"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+    </div>
+
+</body>
+</html>

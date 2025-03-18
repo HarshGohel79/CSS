@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            padding: 0%;
+
+        }
+        .row
+        {
+            height: auto;
+            background: bisque;
+            display: grid;
+            grid-template-columns: repeat(3,25fr);
+            grid-template-columns: repeat(3,25fr);
+            grid-template-rows: auto;
+            
+    
+        }
+        .row .col1 img
+        { 
+            padding: 20px;
+            height: 200px;
+            width: 100%;
+            /* border-radius: 30px; */
+            /* background: red; */
+        }
+        @media(max-width:1200px)
+        {
+            .row
+            {
+                grid-template-columns: 50fr 50fr 50fr 50fr;
+                
+                    grid-template-rows: auto;
+                width: 100%;
+            
+            }
+        }
+
+        @media(max-width:800px)
+        {
+            .row
+            {
+                grid-template-columns: 50fr 50fr 50fr;
+                grid-template-rows: auto;
+                width: 100%;
+            
+            }
+        }
+
+        @media(max-width:550px)
+        {
+            .row
+            {
+                grid-template-columns:  50fr;
+                grid-template-rows: auto;
+            
+            }
+        }
+
+        
+    
+        
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt="" ></div>
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt="" ></div>
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt=""></div>
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt=""></div>
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt=""></div>
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt=""></div>
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt=""></div>
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt=""></div>
+        <div class="col1"><img src="i:\CSS\task\elite shoppy\img\bottom1.jpg" alt=""></div>
+
+    </div>
+</body>
+</html>

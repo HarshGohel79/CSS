@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background: red;
+        }
+        table
+        {
+            width: 65%;
+            height: 500px;
+            margin: 20vh auto;
+            border: 1px solid white;
+            background-color: white;
+        }
+        input
+        {
+            border-color: 0;
+            border-bottom: 1 solid black;
+        }
+        .td1
+        {
+            text-align: center;
+            font-size: 2vw;
+            color: transparent;
+            background: linear-gradient(60deg,purple,pink,lightblue,white);
+            -webkit-background-clip: text;
+        }
+        input
+        {
+            border: 0;
+            border-bottom: 1px solid black;
+            padding: 5px;
+        }
+        ::placeholder
+        {
+            font-size: 1vw;
+            color: black;
+        }
+        .button
+        {
+            background: linear-gradient(60deg,skyblue,rgb(161, 38, 161)); 
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;
+            height: 40px;
+            width: 250px;
+            color: aliceblue;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <table>
+            
+            <tr>
+                <td class="td1" colspan="2">Responsive Contact Us Form</td>
+            </tr>
+
+            
+            <tr>
+                <td> 
+                    <input type="text" placeholder="First Name" size="65">
+                </td>
+                <td>
+                    <input type="text" placeholder="Last Name" size="65">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <input type="email" placeholder="Email Address" size="65">
+                </td>
+                <td>
+                    <input type="text" placeholder="Website Name" size="65">
+                </td>
+            </tr>
+            
+            <tr>
+                <td colspan="2">
+                    <input type="text" size="133" placeholder="Write your message">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input class="button" type="submit">
+                </td>
+            </tr>
+        
+        </table>
+    </form>
+</body>
+</html>

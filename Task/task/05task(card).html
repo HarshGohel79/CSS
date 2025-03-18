@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+        }
+        
+        .main{
+            height: 350px ;
+            width: 250px;
+            background: black;
+            margin: 100px auto;
+            position: relative;
+            text-align: center;
+
+            
+        }
+
+        .a
+        {
+            height: 250px;
+            width: 250px;
+            background-color: aqua;
+            /* position: relative; */
+        }
+
+        .e
+        {
+            
+            background-color: aqua;
+            position: absolute;
+        }
+
+
+    
+
+        .b
+        {
+            height: 50px;
+            width: 250px;
+            background: black;
+            color: white;
+            line-height: 50px;
+            position: absolute;
+            top: 0;
+            right: o;
+            transition: 1s;
+            opacity: 0;
+
+        }
+        .c
+        { 
+            height: 100px;
+            width: 250px;
+            background: coral;
+            line-height: 30px;
+            color: white    ;
+            line-height: 30px;
+
+        }
+
+        
+
+        .a:hover .b
+        {
+         top: 200px;
+         opacity: 1;        
+        }
+
+
+        .k
+        {
+            position: absolute;
+            background: red;
+            color: white;
+            right: 0;
+            padding: 4px 9px;
+        }
+
+
+
+    </style>
+    
+</head>
+<body>
+ <div class="main">
+       <div class="k">NEW</div>       
+       <div class="a"><img src="imges/m1.jpg" alt="" width="100%" height="100%">
+        <!-- <div class="e"><img src="imges/m1.jpg" alt="" width="100%" height="100%"></div> -->
+       <div class="b">QUICK VIVW</div>
+       </div>
+
+        <div class="c">
+         <p>Fromal Blue Shirt</p>
+         <p>$45.99 $69.71</p>
+         <button>Add to card</button>
+        </div>
+
+ </div>
+</body>
+</html>
