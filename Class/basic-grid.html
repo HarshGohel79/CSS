@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       *{box-sizing: border-box;}
+       .row 
+        {
+            /* height: px; */
+            background: gray;
+            display: grid;
+            grid-template-columns:  50fr 50fr;
+         grid-template-rows:100px 50px 200px 200px ;
+            
+           
+        }
+        .col1,.col2,.col3,.col4 
+        {
+           
+            border: 2px solid green;
+           
+        }
+
+        .hh
+        {
+            background: red;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows:100px 50px 200px 200px;
+        }
+        
+        .co1,.co2,.co3,.co4{
+            border: 3px solid black;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col1">COL 1</div>
+        <div class="col2">COL 2</div>
+        <div class="col3">COL 3</div>
+        <div class="col4">COL 4</div>
+
+        <div class="col1">COL 1</div>
+        <div class="col2">COL 2</div>
+        <div class="col3">COL 3</div>
+        <div class="col4">COL 4</div>
+    </div>
+
+    <div class="hh">
+        <div class="co1">COL 1</div>
+        <div class="co2">COL 2</div>
+        <div class="co3">COL 3</div>
+        <div class="co4">COL 4</div>
+
+        <div class="co1">COL 1</div>
+        <div class="co2">COL 2</div>
+        <div class="co3">COL 3</div>
+        <div class="co4">COL 4</div>
+    </div>
+    
+</body>
+</html>

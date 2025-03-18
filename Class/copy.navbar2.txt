@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .nav {
+            height: 100px;
+            background: black;
+            word-spacing: 20px;
+            line-height: 100px;
+            display: flex;
+            justify-content: center;
+            padding: ;
+
+        }
+
+        ul {
+            margin: 0;
+            padding: 0%;
+        }
+
+
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li {
+            display: inline;
+            font-size: 20px;
+            position: relative;
+        }
+
+        li::after {
+            content: "";
+            background: greenyellow;
+            height: 7px;
+            width: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 1s;
+            
+
+        }
+
+        li:hover::after {
+            width: 100%;
+            top: 70;
+            
+
+        }
+
+
+       .nav button
+       {
+        background: green;
+        width: 20%;
+        margin-left: 190px;
+        color: black;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li> <a href="link">Home</a></li>
+            <li> <a href="link">About</a></li>
+            <li> <a href="link">men'swear</a></li>
+            <li> <a href="link">womans'swear</a></li>
+            <li> <a href="link">shortcodes</a></li>
+            <li> <a href="link">contect</a></li>
+
+
+        </ul>
+    
+        
+        <button><i class="fa fa-car"> </i></button>
+
+    </div>
+</body>
+
+</html>

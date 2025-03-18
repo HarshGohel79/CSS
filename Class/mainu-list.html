@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        li
+        {
+            list-style: none;
+        }
+        .nav
+        {
+            padding: 20px;
+            background: red;
+            text-align: center;
+        }
+        .list
+        {
+            position: relative;
+            display: inline;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .harsh
+        {
+            position: absolute;
+            top: 100%;
+            background: aqua;
+            height: auto;
+            width: auto;
+            opacity: 0;
+        }
+        .list:hover .harsh
+        {
+            opacity: 1;
+        }
+        .list2
+        {
+            position: relative;
+        }
+        .harsh2
+        {
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            background: grey;
+            height: auto;
+            width: auto;
+            opacity: 0;
+        }
+        .list2:hover .harsh2
+        {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav">
+
+            <li class="list"><a href="">Home</a></li>
+            <li class="list"><a href="">about</a></li>
+
+            <li class="list"><a href="">services</a>
+
+                <ul class="harsh">
+                
+                    <li class="list2"><a href="">services1</a></li>
+                    <li class="list2"><a href="">services2</a></li>
+
+                    <li class="list2"><a href="">services3</a>
+
+                        <ul class="harsh2">
+    
+                            <li class="list2"><a href="">services1</a></li>
+                            <li class="list2"><a href="">services2</a></li>
+                            <li class="list2"><a href="">services3</a></li>
+                        </ul>
+                    </li>
+                        
+    
+                    <li class="list2"><a href="">services4</a></li>
+    
+                </ul>
+            </li>
+
+
+            <li class="list"><a href="">contect</a></li>
+        </div>
+    </nav>
+</body>
+</html>

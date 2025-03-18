@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+        .after 
+        {
+            height: 300px;
+            width: 500px;
+            background: url(../task/task7.jpg);
+            background-size: cover;
+            background-position: -50px 0;
+            margin: 100px auto;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+            border: 12px solid transparent;
+            transition: .5s;
+        
+            
+            
+        }
+         .after:hover 
+        {
+            background-position: 0px 0;
+        } 
+
+       .befor
+        {
+            height: 200px;
+            width: 400px;
+            /* background: coral; */
+            border: 9px solid #fff;
+            padding: 110px 0 0 140px;
+            word-spacing: 10px;
+            letter-spacing: 8px;
+            font-family: cursive;
+            color:#fff;
+            /* display: none; */
+            opacity: 0;
+            /* visibility: hidden; */
+            transition: .5s;
+            margin-left: -50px;
+            
+        }
+ 
+        .after:hover .befor 
+        {
+            /* display: block; */
+            
+            opacity: 1;
+            /* visibility: visible; */
+            margin-left: 0px;
+           
+        } 
+    </style>
+</head>
+<body>
+
+    <div class="after">
+
+        <div class="befor">
+            NEW ARRIVALS
+        </div>
+
+    </div>
+
+  
+    
+</body>
+</html>
